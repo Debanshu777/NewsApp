@@ -10,7 +10,7 @@ public class News {
     @Expose
     private String status;
 
-    @SerializedName("totalResult")
+    @SerializedName("totalResults")
     @Expose
     private int totalResult;
 
