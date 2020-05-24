@@ -59,7 +59,7 @@ public class Utils {
         return newDate;
     }
 
-    public static String getLanguage(String s){
+    public static String getLanguage(){
         Locale locale = Locale.getDefault();
         String language = String.valueOf(locale.getLanguage());
         return language;
