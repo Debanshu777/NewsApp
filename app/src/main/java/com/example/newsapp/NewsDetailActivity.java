@@ -3,8 +3,10 @@ package com.example.newsapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.TransitionInflater;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -34,7 +36,11 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
+
         init();
+        getWindow().setSharedElementEnterTransition(TransitionInflater.from(this).inflateTransition(R.transition.shared_element_transation));
+        newsImage.setTransitionName("Image");
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");

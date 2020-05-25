@@ -15,4 +15,10 @@
         <item name="colorControlHighlight">@color/colorAccent</item>
     </style>
 
+    <style name="MYTRANSITION">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/shared_element_transation</item>
+        <item name="android:windowSharedElementExitTransition">@transition/shared_element_transation</item>
+    </style>
 </resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+    <changeImageTransform>
+        <targets>
+            <target android:targetId="@id/newsImage" />
+            <target android:targetId="@id/backdrop" />
+        </targets>
+    </changeImageTransform>
+    <changeBounds>
+        <targets>
+            <target android:targetId="@id/backdrop" />
+            <target android:targetId="@id/newsImage" />
+        </targets>
+    </changeBounds>
+    <fade />
+</transitionSet>
