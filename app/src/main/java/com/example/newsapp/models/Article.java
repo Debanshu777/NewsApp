@@ -8,6 +8,18 @@ public class Article {
     @Expose
     private Source source;
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    @SerializedName("url")
+    @Expose
+    private String url;
+
     @SerializedName("author")
     @Expose
     private String author;
